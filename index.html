@@ -56,463 +56,56 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer; position: relative; min-height: 100vh;" title="close side menu" id="myOverlay"></div>
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main" style="margin-left:250px;">
-  <div id="content-wrap" style="padding-bottom: 5.5rem">
-    <div class="w3-row" style="padding-top: 64px; padding-bottom: 20px">
-      <div class="w3-container">
-        <h1 style="font-family: 'IM Fell English', serif">Types of Little Leather Library Books</h1>
-        <p style="font-family: 'Times', serif; font-size: 12pt;">Here is a simplified categorization of the different types of Little Leather Library/Little Luxart Library/Robert K. Haas
-          books published. They are all roughly 4" x 3.25" unless otherwise noted. Further distinctions can be made among these types,
-          click on the links below for that information and photos as well. From reading the advertisements, the term "Redcroft" seems to just describe the non-leather covers, they
-          also sometimes used "Croftcutt" to describe them. Some of the edition breakdowns come from the now defunct website UnEarthlyBooks.com that I accessed through internet archives,
-          and I'm unable to confirm the existence of certain types. Some books have title lists in the back, some do not.
-          If you have any additional photos or information, please <a target="_blank" href="mailto: csm324@nau.edu">contact us</a>.
-        </p>
-      </div>
-    
-      <div class="w3-row" style="width: 65%; margin-left: 15%; font-family: 'IM Fell English', serif">
-        <ul class="w3-ul w3-half">
-          <li style="font-size: 14pt; border-bottom: 1px solid black;"><i class="fa fa-book"></i> Literary Classics</li>
-          <li><i class="fa fa-arrow-right" id="real-leather" ></i> <a href="#real-leather" onClick="selectCategory('real-leather', 'real-leather1')"> Real Leather</a></li>
-          <li><i class="fa fa-arrow-right" id="red-gold" ></i> <a onClick="selectCategory('red-gold', 'red-gold1')" href="#red-gold">Miniature Library</a></li>
-          <li><i class="fa fa-arrow-right" id="redcroft" ></i> <a onClick="selectCategory('redcroft', 'redcroft1')" href="#redcroft">Redcroft Edition</a></li>
-          <li><i class="fa fa-arrow-right" id="brown" ></i> <a onClick="selectCategory('brown', 'brown1')" href="#brown-cover">Brown</a></li>
-          <li><i class="fa fa-arrow-right" id="luxart" ></i> <a onClick="selectCategory('luxart', 'luxart1')" href="#luxart">Little Luxart Library</a></li>
-        </ul>
-    
-        <ul class="w3-ul w3-half">
-          <li style="font-size: 14pt; border-bottom: 1px solid black;"><i class="fa fa-book"></i> Other Titles and Sets</li>
-          <li><i class="fa fa-arrow-right" id="extracts" ></i> <a onClick="selectCategory('extracts', 'extracts1')" href="#extracts">Extracts of Proceedings Grand Lodge</a></li>
-          <li><i class="fa fa-arrow-right" id="sidewalks" ></i> <a onClick="selectCategory('sidewalks', 'sidewalks1')" href="#sidewalks-of-ny">Sidewalks of New York</a></li>
-          <li><i class="fa fa-arrow-right" id="bible" ></i> <a onClick="selectCategory('bible', 'bible1')" href="#holy-bible">The Holy Bible</a></li>
-          <li><i class="fa fa-arrow-right" id="child-health" ></i> <a onClick="selectCategory('child-health', 'child-health1')" href="#child-health-library">Child Health Library</a></li>
-          <li><i class="fa fa-arrow-right" id="the-cure" ></i> <a onClick="selectCategory('the-cure', 'the-cure1')" href="#the-cure">The Cure of Self Consciousness</a></li>
-        </ul>
-      </div>
-    </div>
+<div class="w3-main" style="margin-left:250px">
 
-    <div id="real-leather1">
-      <div class="w3-container">
-        <h2 style="font-family: 'IM Fell English', serif">Real Leather (First editions)</h2>
-        <p style="font-family: 'Times', serif; font-size: 12pt;">
-          1916-1919. It is believed that covers with blind stamped titles were sold before the ones with floral borders. There were intially 15 titles. Various leathers used. Floral bordered tan 
-          leather sets could be purchased
-          to send to soldiers oversees fighting in WW1. At some point, "The Jew" was replaced with "Mumu", making this title rare among these, along with Constitution of the League of Nations 
-          that is also a rare find.
-        </p>
+  <div class="w3-row w3-padding-64">
+    <div class="w3-container">
+      <h1 style="font-family: 'IM Fell English', serif"><img src="logo.png" style="width: 70px; padding-right: 10px">Little Leather Library Collectors</h1>
+      <p style="font-family: 'Times', serif">
+         Little Leather Library Collectors is a website dedicated to all things related to the Little Leather Library Corporation aka Little Luxart Library aka Robert K Haas, Inc., book
+         publishers in the 1910's and 1920's. When I began collecting in 2021, I found it very difficult to find information and photos of the various editions LLL books produced, but after 
+         searching through dozens of archives, I found a lot of interesting things from all corners of the internet that I hope you find interesting as well. This website makes it 
+         easy to browse photos, editions, advertisement clippings, and other items related to the Little Leather Library Corp., but I also want to open this site up to host photos and
+         stories from other collectors like myself.
+      </p>
 
-        <div class="w3-row" style="font-family: 'Times', serif; width: 90%; margin-left: 4%; margin-bottom: 40px">
-          <ul class="w3-ul w3-third">
-            <li style="font-size: 14pt; border-bottom: 1px solid black; font-family: 'IM Fell English', serif">Main Types</li>
-            <li><i class="fa fa-arrow-right" id="one" ></i> <a onClick="selectRealLeatherCat('one', '1')" href="#1">Tan with Floral Borders</a> (90 volumes)</li>
-            <li><i class="fa fa-arrow-right" id="two" ></i> <a onClick="selectRealLeatherCat('two', '2')" href="#2">Colored with Floral Borders</a> (60 volumes)</li>
-            <li><i class="fa fa-arrow-right" id="three" ></i> <a onClick="selectRealLeatherCat('three', '3')" href="#3">Tan with Blind Stamp</a></li>
-            <li><i class="fa fa-arrow-right" id="five" ></i> <a onClick="selectRealLeatherCat('five', '5')" href="#5">Colored with Blind Stamp</a></li>
-            <li><i class="fa fa-arrow-right" id="six" ></i> <a onClick="selectRealLeatherCat('six', '6')" href="#6">Tan (Suede) with Blind Stamp</a></li>
-            <li><i class="fa fa-arrow-right" id="four" ></i> <a onClick="selectRealLeatherCat('four', '4')" href="#4">Colored (Suede) with Blind Stamp</a> (60 volumes each color)</li>
-            <li style="font-size: 14pt; border-bottom: 1px solid black; font-family: 'IM Fell English', serif; margin-top: 10px">Rumoured / Other Types</li>
-            <li>Wraps version: Proof (I have only run across one of these)</li>
-            <li>Wraps Version 2: Proof (these are larger)</li>
-            <li>Hard Cover: Proof (Stiff card board boards)</li>
-            <!-- <li>Red Leather Set (60 Volumes)</li> -->
-            <!-- <li>Red Suede Leather Set (60 volumes)</li> -->
-            <!-- <li>Dark Brown leather (abstract floral border)</li> -->
-            <!-- <li>Brown stiff textured leather with tan blind stamp</li> -->
-            <li>Black leather with blind stamp title (full page Witman's Sampler Candy Ad on last page)</li>
-          </ul>
+      <a href="60vols.jpeg" target="_blank"><img src="60vols.jpeg" style="width: 40%; display: block; margin-left: 30%"></a>
+      <p style="text-align: center; font-family: 'Times', serif; font-size: 10pt;">Photo source: <a target="_blank" href="https://www.pbagalleries.com/view-auctions/catalog/id/418/lot/129414/">PGA Galleries</a></p>
 
-          <ul class="w3-ul w3-twothird">
-            <li style="font-size: 14pt; border-bottom: 1px solid black; ; font-family: 'IM Fell English', serif">Photos</li>
-            <li id="1">
-              <a target="_blank" href="profiles/1_1.png"><img src="profiles/1_1.png" style="width: 30%; display: inline;"></a>
-              <a target="_blank" href="60vols.jpeg"><img src="60vols.jpeg" style="width: 60%; display: inline;"></a>
-            </li>
-            <li id="2">
-              <a target="_blank" href="profiles/1_23.jpeg"><img src="profiles/1_23.jpeg" style="width: 24%; display: inline;"></a>
-              <a target="_blank" href="profiles/1_2.png"><img src="profiles/1_2.png" style="width: 23.5%; margin-left: -5px; display: inline;"></a>
-              <a target="_blank" href="profiles/1_24.jpeg"><img src="profiles/1_24.jpeg" style="width: 24%; margin-left: -5px; display: inline;"></a>
-              <a target="_blank" href="profiles/1_21.jpeg"><img src="profiles/1_21.jpeg" style="width: 24%; margin-left: -5px; display: inline;"></a>
-              <a target="_blank" href="lll_types/dyed_set_1/1_1.jpeg"><img src="lll_types/dyed_set_1/1_1.jpeg" style="width: 94.5%; margin-left: 15px; margin-top: 6px; display: block;"></a>
-            </li>
-            <li id="3">
-              <a target="_blank" href="profiles/1_11.png"><img src="profiles/1_11.png" style="width: 31%; display: inline;"></a>
-              <a target="_blank" href="lll_types/early_natural_leather/5_1.jpeg"><img src="lll_types/early_natural_leather/5_1.jpeg" style="width: 62%; display: inline;"></a>
-            </li>
-            <li id="4">
-              <a target="_blank" href="profiles/1_26.png"><img src="profiles/1_26.png" style="width: 31%; display: inline;"></a>
-              <a target="_blank" href="profiles/1_13.png"><img src="profiles/1_13.png" style="width: 31%; display: inline;"></a>
-            </li>
-            <li id="5">
-              <a target="_blank" href="profiles/1_14.png"><img src="profiles/1_14.png" style="width: 31%; display: inline;"></a>
-            </li>
-            <li id="6">
-              <a target="_blank" href="profiles/1_27.png"><img src="profiles/1_27.png" style="width: 31%; display: inline;"></a>
-            </li>
-            <!-- <li>
-              <img src="profiles/1_13.png" style="width: 19%; display: inline;">
-              <img src="profiles/1_11.png" style="width: 19%; display: inline;">
-              <img src="profiles/1_1.png" style="width: 19%; display: inline;">
-              <img src="profiles/1_4.png" style="width: 19%; display: inline;">
-              <img src="profiles/1_5.png" style="width: 19%; display: inline;">
+      <h4 style="font-family: 'IM Fell English', serif">Publisher History</h4>
+      <p style="font-family: 'Times', serif">
+        The Little Leather Library Corporation of New York was founded in 1915 by Albert Boni, Harry Scherman and Maxwell Sackheim. They were initially used as premiums in Whitman's Sampler. 
+        These small 4 inch by 3 inch books were perfect for was to become one of the first attempts to mass-market inexpensive books in the United States. This pioneering effort eventually led 
+        to the establishment of Book of the Month Club, Modern Library publishing company, which ultimately spawned Random House Publishers as a subsidiary company.
+      </p> <p style="font-family: 'Times', serif">
+        Initially the books were sold individually through retail stores with the Woolworth's chain of retail stores being the largest. The publishers were extremly creative in their marketing of
+         these books from placing them in Whitman's Sampler boxes to redeeming them by sending in X number of Florida Orange Wrappers. There is some indication that single volumes were included as
+          promotional items in cereal boxes as a means of advertising the collection. Sets could also be purchased to send to soldiers fighting in WW1.
+      </p> <p style="font-family: 'Times', serif">
+        The first versions of the Little Leather Library volumes were bound in real leather. By the early 1920's the Little Leather Library was being advertised in popular magazines and sold 
+        directly by mail order. The books were advertised on the back covers of Mentor Magazine, Pictorial Review, The Youth's Companion as well as National Geographic magazine ten different months
+         from January 1921 to October 1924. By then the genuine leather covers originally used had been replaced with an early type of imitation leather consisting of latex coated canvas on the 
+         outside with flocking on the inside. This change was due to the war effort (WW1) which needed the leather for helmets etc. Sometime later, the company was bought out by Robert K. Haas but stopped
+         publishing new titles around 1925.
+      </p> <p style="font-family: 'Times', serif">
+        Individual books were sold for 10 cents, sets of 30 books were sold for $2.97 and a set of 100 books was priced at $9.97.
+      </p>
 
-              <img src="profiles/1_3.png" style="width: 19%; display: inline;">
-              <img src="profiles/1_18.jpeg" style="width: 19%; display: inline;">
-              <img src="profiles/1_6.png" style="width: 19%; display: inline;">
-              <img src="profiles/1_15.jpg" style="width: 19%; display: inline;">
-              <img src="profiles/1_22.jpeg" style="width: 19%; display: inline;">
+      <!-- <a href="nyc.jpeg" target="_blank"><img src="nyc.jpeg" style="width: 50%; display: block; margin-left: 25%"></a>
+      <p style="text-align: center; font-family: 'Times', serif; font-size: 10pt;">View down Fifth Avenue circa 1910. Colorized by 
+        <a href="https://imbuedwithhues.wordpress.com/" target="_blank">Imbued With Hues</a>.</p> -->
 
-              <img src="profiles/1_16.jpeg" style="width: 19%; display: inline;">
-              <img src="profiles/1_2.png" style="width: 19%; display: inline;">
-              <img src="profiles/1_20.jpeg" style="width: 19%; display: inline;">
-              <img src="profiles/1_21.jpeg" style="width: 19%; display: inline;">
-              <img src="profiles/1_19.jpeg" style="width: 19%; display: inline;">
-
-              <img src="profiles/1_23.jpeg" style="width: 19%; display: inline;">
-              <img src="profiles/1_17.jpeg" style="width: 19%; display: inline;">
-              <img src="profiles/1_8.png" style="width: 19%; display: inline;">
-              <img src="profiles/1_9.png" style="width: 19%; display: inline;">
-              <img src="profiles/1_25.jpeg" style="width: 19%; display: inline;">
-            </li> -->
-
-            <li>
-              <ul>
-                
-              </ul>
-            </li>
-          </ul>
-        </div>
-
-        <h2 style="font-family: 'IM Fell English', serif">Real Leather Collections</h2>
-        <p style="font-family: 'Times', serif; font-size: 12pt;">
-          No collections yet!
-        </p>
-      </div>
-    </div>
-
-
-    <div id="redcroft1">
-      <div class="w3-container">
-        <h2 style="font-family: 'IM Fell English', serif">Redcroft Editions</h2>
-        <p style="font-family: 'Times', serif; font-size: 12pt;">
-          1921-1924. Embossed leatherette with "Redcroft Edition" on the back covers. Most common among all editions.
-        </p>
-
-        <div class="w3-row" style="font-family: 'Times', serif; width: 90%; margin-left: 4%; margin-bottom: 40px">
-          <ul class="w3-ul w3-third">
-            <li style="font-size: 14pt; border-bottom: 1px solid black; font-family: 'IM Fell English', serif">Redcroft Editions</li>
-            <li>Red embossed leatherette (101 Volumes)</li>
-            <li>Version 1: Green Leatherette (101 Volumes)</li>
-            <li>Version 2: Deluxe Green/Bronze tinted Leatherette (101 Volumes)</li>
-            <li>Version 3: Deluxe Bronze with Turquoise Wash (101 Volumes)</li>
-            <li>Version 4: Bowman Hotels Edition (101 Volumes)</li>
-            <li>Version 5: Gilt Title on Spine (101 Volumes)</li>
-          </ul>
-
-          <ul class="w3-ul w3-twothird">
-            <li style="font-size: 14pt; border-bottom: 1px solid black; ; font-family: 'IM Fell English', serif">Photos</li>
-            <li>
-              <a target="_blank" href="lll_types/redcroft/romeo.jpg"><img src="lll_types/redcroft/romeo.jpg" style="width: 38.5%; display: inline;"></a>
-              <a target="_blank" href="lll_types/redcroft/romeo_back.jpg"><img src="lll_types/redcroft/romeo_back.jpg" style="width: 37%; display: inline;"></a>
-          </ul>
-        </div>
-
-        <h2 style="font-family: 'IM Fell English', serif">Redcroft Collections</h2>
-        <p style="font-family: 'Times', serif; font-size: 12pt;">
-          No collections yet!
-        </p>
-      </div>
-    </div>
-
-
-    <div id="luxart1">
-      <div class="w3-container">
-        <h2 style="font-family: 'IM Fell English', serif">Little Luxart Library</h2>
-        <p style="font-family: 'Times', serif; font-size: 12pt;">
-          1921-1925. Published by Robert K Haas after he took over ownership of the company. A Christmas Carol seems to be the rarest title among the red Little Luxart Library books, not sold in
-          purchasable sets of 30.
-        </p>
-
-        <div class="w3-row" style="font-family: 'Times', serif; width: 90%; margin-left: 4%; margin-bottom: 40px">
-          <ul class="w3-ul w3-third">
-            <li style="font-size: 14pt; border-bottom: 1px solid black; font-family: 'IM Fell English', serif">Little Luxart Library Editions</li>
-            <li>Red leatherette transitional (first thus) cover is luxart but credited published on title page is Little Leather Library.</li>
-            <li>Red Leatherette (aka Little Luxart Library) (31 Volumes)</li>
-            <li>Brown Glossy Leatherette Version  (30 Volumes) (?)</li>
-          </ul>
-
-          <ul class="w3-ul w3-twothird">
-            <li style="font-size: 14pt; border-bottom: 1px solid black; ; font-family: 'IM Fell English', serif">Photos</li>
-            <li>
-              <a target="_blank" href="lll_types/luxart/1_1.jpg"><img src="lll_types/luxart/1_1.jpg" style="width: 38.5%; display: inline;"></a>
-              <a target="_blank" href="lll_types/luxart/1_2.jpg"><img src="lll_types/luxart/1_2.jpg" style="width: 37.5%; display: inline;"></a>
-          </ul>
-        </div>
-
-        <h2 style="font-family: 'IM Fell English', serif">Redcroft Collections</h2>
-        <p style="font-family: 'Times', serif; font-size: 12pt;">
-          No collections yet!
-        </p>
-      </div>
-    </div>
-
-    <div id="red-gold1">
-      <div class="w3-container">
-        <h2 style="font-family: 'IM Fell English', serif">Miniature Library</h2>
-        <p style="font-family: 'Times', serif; font-size: 12pt;">
-          1920-1921. First leatherette books, due to rising leather prices during WW1. There is slight variation among these, in both size, shade
-          of red, and stamp color. Tom Fox goes into some of the differences in his <a target="_blank" href="https://tomwfox.blogspot.com/2013/08/little-leather-library-identification.html">identification guide</a>. 
-          A set of 30 sold for $2.98, or $49 in today's money. 
-
-        </p>
-
-        <div class="w3-row" style="font-family: 'Times', serif; width: 90%; margin-left: 4%; margin-bottom: 40px">
-          <ul class="w3-ul w3-third">
-            <li style="font-size: 14pt; border-bottom: 1px solid black; font-family: 'IM Fell English', serif">Miniature Library Editions</li>
-            <li>Red Miniature Library Edition with Dark Brown Blind Stamp (60? Volumes)</li>
-            <li>Red Miniature Library Edition with Gold Blind Stamp (101 Volumes)</li>
-          </ul>
-
-          <ul class="w3-ul w3-twothird">
-            <li style="font-size: 14pt; border-bottom: 1px solid black; ; font-family: 'IM Fell English', serif">Photos</li>
-            <li>
-              <a href="_blank" target="lll_types/mini_library/1_2.jpeg"><img src="lll_types/mini_library/1_2.jpeg" style="width: 45%; display: inline;"></a>
-              <a href="_blank" target="lll_types/mini_library/1_3.jpeg"><img src="lll_types/mini_library/1_3.jpeg" style="width: 45%; display: inline;"></a>
-              <a href="_blank" target="lll_types/mini_library/1_5.jpg"><img src="lll_types/mini_library/1_5.jpg" style="width: 45%; display: inline; margin-top: 2px"></a>
-            </li>
-          </ul>
-        </div>
-
-        <h2 style="font-family: 'IM Fell English', serif">Miniature Library Collections</h2>
-        <p style="font-family: 'Times', serif; font-size: 12pt;">
-          No collections yet!
-        </p>
-      </div>
-    </div>
-
-    <div id="brown1">
-      <div class="w3-container">
-        <h2 style="font-family: 'IM Fell English', serif">Brown Leatherette</h2>
-        <p style="font-family: 'Times', serif; font-size: 12pt;">
-          1920's. <i>A Christmas Carol</i> by 
-          Charles Dickens seems to be the most printed title among these, which unlike the others has a few advertisements in the back for different purchasable sets,
-          as well as the Redcroft Edition stamp on the back cover.
-        </p>
-
-        <div class="w3-row" style="font-family: 'Times', serif; width: 90%; margin-left: 4%; margin-bottom: 40px">
-          <ul class="w3-ul w3-third">
-            <li style="font-size: 14pt; border-bottom: 1px solid black; font-family: 'IM Fell English', serif">Brown Leatherette Editions</li>
-            <li>Version 1: Matte Finish (101 Volumes)</li>
-            <li>Version 2: Glossy Finish (101 Volumes) (30 volume set in D.F. Duncan cedar chest could be purchased) </li>
-          </ul>
-
-          <ul class="w3-ul w3-twothird">
-            <li style="font-size: 14pt; border-bottom: 1px solid black; ; font-family: 'IM Fell English', serif">Photos</li>
-            <li>
-              <img src="lll_types/brown/1_1.jpeg" style="width: 35%; display: inline;">
-              <img src="lll_types/brown/1_2.jpeg" style="width: 48%; display: inline;">
-              <p style="display: block;">
-                Glossy (top) Matte (bottom)
-              </p>
-            </li>
-          </ul>
-        </div>
-
-        <h2 style="font-family: 'IM Fell English', serif">Brown Leatherette Collections</h2>
-        <p style="font-family: 'Times', serif; font-size: 12pt;">
-          No collections yet!
-        </p>
-      </div>
-    </div>
-
-    <div id="extracts1">
-      <div class="w3-container">
-        <h2 style="font-family: 'IM Fell English', serif">Extracts of Proceedings Grand Lodge F&A.M. New York</h2>
-        <p style="font-family: 'Times', serif; font-size: 12pt;">
-          1922-1923. This book was a special printing for the Grand Lodge much like the Sidewalks of New York. Very rare.
-        </p>
-
-        <div class="w3-row" style="font-family: 'Times', serif; width: 90%; margin-left: 4%; margin-bottom: 40px">
-          <ul class="w3-ul w3-third">
-            <li style="font-size: 14pt; border-bottom: 1px solid black; font-family: 'IM Fell English', serif">Extracts of Proceedings... Editions</li>
-            <li>1922</li>
-            <li>1923</li>
-          </ul>
-
-          <ul class="w3-ul w3-twothird">
-            <li style="font-size: 14pt; border-bottom: 1px solid black; ; font-family: 'IM Fell English', serif">Photos</li>
-            <li>
-              <img src="lll_types/extracts/1_1.jpg" style="width: 46%; display: inline;">
-              <img src="lll_types/extracts/7_2.jpeg" style="width: 45%; display: inline;">
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div id="sidewalks1">
-      <div class="w3-container">
-        <h2 style="font-family: 'IM Fell English', serif">Sidewalks of New York</h2>
-        <p style="font-family: 'Times', serif; font-size: 12pt;">
-          1923. Illustrated. These were given to guests of Bowman Hotels in NYC, boasting everything to appreciate about visiting New York,
-          from it's history, sights, people and culture.
-        </p>
-
-        <div class="w3-row" style="font-family: 'Times', serif; width: 90%; margin-left: 4%; margin-bottom: 40px">
-          <ul class="w3-ul">
-            <li style="font-size: 14pt; border-bottom: 1px solid black; ; font-family: 'IM Fell English', serif">Photos</li>
-            <li>
-              <img src="lll_types/sidewalks/4_1.jpeg" style="width: 26%; display: inline;">
-              <img src="lll_types/sidewalks/4_2.jpeg" style="width: 26%; display: inline;">
-              <img src="lll_types/sidewalks/4_3.jpeg" style="width: 45%; display: inline;">
-
-              <!-- <img src="lll_types/sidewalks/4_4.jpg" style="width: 30%; display: inline;">
-              <img src="lll_types/sidewalks/4_5.jpg" style="width: 30%; display: inline;">
-              <img src="lll_types/sidewalks/4_6.jpg" style="width: 30%; display: inline;"> -->
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div id="bible1">
-      <div class="w3-container">
-        <h2 style="font-family: 'IM Fell English', serif">The Holy Bible</h2>
-        <p style="font-family: 'Times', serif; font-size: 12pt;">
-          1924. 30 volume set that could be purchased with "The Ten Commandment Bookends" costing an extra 69 cents which resemble
-          the tablets where Moses wrote The Ten Commandments, other sets could come in a cedar chest.
-        </p>
-
-        <div class="w3-row" style="font-family: 'Times', serif; width: 90%; margin-left: 4%; margin-bottom: 40px">
-          <ul class="w3-ul w3-third">
-            <li style="font-size: 14pt; border-bottom: 1px solid black; font-family: 'IM Fell English', serif">Bible Editions</li>
-            <li>Matte Brown Covers (30 Volumes)</li>
-            <li>Glossy brown covers ( 30 volumes)</li>
-            <li>Deep Bronze with Dark Brown Wash  similar to Deluxe Redcroft Editions (30 Volumes) (could be purchased with D.F. Duncan cedar chest) <br></li>
-            <li style="font-size: 14pt; border-bottom: 1px solid black; font-family: 'IM Fell English', serif">Titles</li>
-            <li><p style="text-align: center;">Old Testament:</p>
-              I: The First Book Of Moses Called Genesis<br>
-              II: Vol. II The First Book Of Moses Called Genesis<br>
-              (continued) III: Exodus IV: Leviticus & Numbers<br>
-              V: Numbers (con't)<br>
-              VI: Deuteronomy & Joshua<br>
-              VII: Joshua & Judges<br>
-              VIII: Judges (continued), Ruth<br>
-              IX: Samuel<br>
-              X: Samuel I & II<br>
-              XI: The First Book of Kings<br>
-              XII: Kings I & II<br>
-              XIII: Chronicles I & II<br>
-              XIV: Chronicles (con't) XV: Ezra & Nehemiah & Esther<br>
-              XVI: Job<br>
-              XVII: Psalms<br>
-              XVIII: Psalms (con't) & Proverbs<br>
-              XIX: Ecclesiastes, Solomon & Isaiah<br>
-              XX: Jeremiah<br>
-              XXI: Lamentations of Jeremiah & the Book of the Prophet Ezekiel ( con't)<br>
-              XXII: Daniel; Malachi
-            </li>
-            <li><p style="text-align: center;">New Testament:</p>
-              XXIV: St. Mark<br>
-              XXV: St. Luke<br>
-              XXVI: St. John<br>
-              XXVII: Acts of the Apostles<br>
-              XXVIII: The Epistle of Paul, the Apostle to the Romans<br>
-              XXIX: Holy Scriptures of the Old Testament<br>
-              XXX: Peter & Revelation
-            </li>
-          </ul>
-
-          <ul class="w3-ul w3-twothird">
-            <li style="font-size: 14pt; border-bottom: 1px solid black; ; font-family: 'IM Fell English', serif">Photos</li>
-            <li>
-              <a target="_blank" href="lll_types/bible/9_6.jpeg"><img src="lll_types/bible/9_6.jpeg" style="width: 65%; display: inline;"></a>
-              <a target="_blank" href="lll_types/bible/9_8.jpeg"><img src="lll_types/bible/9_8.jpeg" style="width: 32.7%; display: inline; margin-left: -8px"></a>
-              <a target="_blank" href="ads/1924/Normal Instructor and Primary Plans  1924-01 Vol 33 Iss 3.png">
-                <img src="ads/1924/Normal Instructor and Primary Plans  1924-01 Vol 33 Iss 3.png" style="width: 84%">
-              </a>
-              <!-- <img src="lll_types/bible/9_4.jpeg" style="width: 97%; display: block;">
-              <img src="lll_types/bible/9_9.jpg" style="width: 36.5%; display: inline;">
-              <img src="lll_types/bible/9_1.jpeg" style="width: 61.2%; display: inline; margin-left: -8px"> -->
-            </li>
-          </ul>
-        </div>
-
-        <h2 style="font-family: 'IM Fell English', serif">The Holy Bible Collections</h2>
-        <p style="font-family: 'Times', serif; font-size: 12pt;">
-          No collections yet!
-        </p>
-      </div>
-    </div>
-
-    <div id="child-health1">
-      <div class="w3-container">
-        <h2 style="font-family: 'IM Fell English', serif">Child Health Library</h2>
-        <p style="font-family: 'Times', serif; font-size: 12pt;">
-          1924. Robert K Haas, Inc. Formerly Little Leather Library. 10 volume set, covered in either brown or light sea green with a darker green wash, embossed leatherette. <i>"A series of ten books by practising specialists of the highest
-          standing, giving the latest and most authoritative information on every phase of child health". </i> Very rare.
-        </p>
-
-        <div class="w3-row" style="font-family: 'Times', serif; width: 90%; margin-left: 4%; margin-bottom: 40px">
-          <ul class="w3-ul w3-third">
-            <li style="font-size: 14pt; border-bottom: 1px solid black; font-family: 'IM Fell English', serif">Child Health Library Editions</li>
-            <li>Green Child Health Set (10 Volumes) (could be purchased in beautifully illustrated gift box)</li>
-            <li>Brown Child Health Set (10 Volumes)</li>
-            <li style="font-size: 14pt; border-bottom: 1px solid black; font-family: 'IM Fell English', serif">Titles</li>
-            <li>
-              I. Pre-Natal Care and the Baby's Birth<br>
-              II. Babies - Their Feeding and Care<br>
-              III. The Neglected Age - The Child from Two to Six<br>
-              IV. Dangers of the School Age<br>
-              V. Communicable Diseases of Childhood<br>
-              VI. Hygiene of the Mouth and Teeth<br>
-              VII. What Children of Various Ages Should Eat<br>
-              VIII. How Children Ought to Grow<br>
-              IX. Psychology of the Child<br>
-              X. Educational Problems
-            </li>
-          </ul>
-
-          <ul class="w3-ul w3-twothird">
-            <li style="font-size: 14pt; border-bottom: 1px solid black; ; font-family: 'IM Fell English', serif">Photos</li>
-            <li>
-              <img src="lll_types/child_health/1_2.jpeg" style="width: 44%; display: inline;">
-              <img src="lll_types/child_health/1_3.jpeg" style="width: 44%; display: inline;">
-              <img src="lll_types/child_health/1_1.jpeg" style="width: 66%; display: inline;">
-            </li>
-          </ul>
-        </div>
-
-        <h2 style="font-family: 'IM Fell English', serif">Child Health Library Collections</h2>
-        <p style="font-family: 'Times', serif; font-size: 12pt;">
-          No collections yet!
-        </p>
-      </div>
-    </div>
-
-    <div id="the-cure1">
-      <div class="w3-container">
-        <h2 style="font-family: 'IM Fell English', serif">The Cure of Self Consciousness by James Alexander</h2>
-        <p style="font-family: 'Times', serif; font-size: 12pt;">
-          1924. Robert K Haas Inc, Formerly Little Leather Library.
-          A 3-volume set dealing with self-consciousness. Brown flexible leatherette embossed covers. Just under 5" by 7".  The second photo is a 
-          <a href="https://books.google.com/books?id=OssKAQAAMAAJ&lpg=RA11-PA2&dq=The%20Cure%20Of%20Self%20Consciousness%20robert%20k%20haas&pg=RA11-PA2#v=onepage&q&f=true" target="_blank">full-page advertisement</a>
-          I found in <i>The American Legion Weekly</i> from January 2nd, 1925.
-        </p>
-
-        <div class="w3-row" style="font-family: 'Times', serif; width: 90%; margin-left: 4%; margin-bottom: 40px">
-          <ul class="w3-ul">
-            <li style="font-size: 14pt; border-bottom: 1px solid black; ; font-family: 'IM Fell English', serif">Photos</li>
-            <li>
-              <a href="lll_types/the_cure/1_1.jpg" target="_blank"><img src="lll_types/the_cure/1_1.jpg" style="width: 44%; display: inline;"></a>
-              <a href="lll_types/the_cure/1_2.png" target="_blank"><img src="lll_types/the_cure/1_2.png" style="width: 44%; display: inline;"></a>
-              <a href="lll_types/the_cure/1_3.jpg" target="_blank"><img src="lll_types/the_cure/1_3.jpg" style="width: 66%; display: block;"></a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <h4 style="font-family: 'IM Fell English', serif">Credits</h4>
+      <p style="font-family: 'Times', serif">
+        The following webpages have been instrumental to the creation of this website. We give thanks to:
+        <a target="blank" href="https://archive.org/">Internet Archive</a>,
+        <a target="_blank" href="https://bookendcollector.wordpress.com/2013/05/27/small-bookends-little-leather-library-aronson-roycroft/">The Bookend Collector</a>, 
+        <a target="_blank" href="http://web.archive.org/web/20160914092247/http://www.unearthlybooks.com/?page=shop/disp&pid=page_LLL">UnEarthly Books</a> (defunct), and
+        <a target="blank" href="https://tomwfox.blogspot.com/2013/08/little-leather-library-identification.html">Tom Fox</a>
+      </p>
     </div>
   </div>
 
@@ -526,76 +119,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 </div>
 
 <script>
-var lll_types = ['real-leather', 'redcroft', 'luxart', 'red-gold', 'brown', 'extracts', 'sidewalks', 'bible', 'child-health', 'the-cure'];
-var lll_types1 = ['real-leather1', 'redcroft1', 'luxart1', 'red-gold1', 'brown1', 'extracts1', 'sidewalks1', 'bible1', 'child-health1', 'the-cure1'];
-
-var real_leather_types = ['one', 'two', 'three', 'four', 'five', 'six'];
-var real_leather_types1 = ['1', '2', '3', '4', '5', '6'];
-
-lll_types.forEach((lll_type, index) => {
-  if (lll_type !== 'real-leather') {
-    var selected_type = document.getElementById(lll_type);
-    var selected_type1 = document.getElementById(lll_types1[index]);
-    selected_type.style.display = "none";
-    selected_type1.style.display = "none";
-  }
-});
-
-real_leather_types.forEach((lll_type, index) => {
-  if (lll_type !== 'one') {
-    var selected_type = document.getElementById(lll_type);
-    var selected_type1 = document.getElementById(real_leather_types1[index]);
-    selected_type.style.display = "none";
-    selected_type1.style.display = "none";
-  }
-});
-
 // Get the Sidebar
 var mySidebar = document.getElementById("mySidebar");
 
 // Get the DIV with overlay effect
 var overlayBg = document.getElementById("myOverlay");
-
-function selectCategory(name, description) {
-  var lll_types = ['real-leather', 'redcroft', 'luxart', 'red-gold', 'brown', 'extracts', 'sidewalks', 'bible', 'child-health', 'the-cure']
-  var lll_types1 = ['real-leather1', 'redcroft1', 'luxart1', 'red-gold1', 'brown1', 'extracts1', 'sidewalks1', 'bible1', 'child-health1', 'the-cure1']
-  var selected_type = document.getElementById(name);
-  var selected_type1 = document.getElementById(description);
-
-  lll_types.forEach((lll_type, index) => {
-    if (lll_type === selected_type.id) {
-      selected_type.style.display = "inline";
-      selected_type1.style.display = "inline";
-    } else {
-      var unselected_type = document.getElementById(lll_type);
-      var unselected_type1 = document.getElementById(lll_types1[index]);
-
-      unselected_type.style.display = "none";
-      unselected_type1.style.display = "none";
-    }
-  });
-}
-
-function selectRealLeatherCat(name, description) {
-  var real_leather_types = ['one', 'two', 'three', 'four', 'five', 'six'];
-var real_leather_types1 = ['1', '2', '3', '4', '5', '6'];
-
-  var selected_type = document.getElementById(name);
-  var selected_type1 = document.getElementById(description);
-
-  real_leather_types.forEach((lll_type, index) => {
-    if (lll_type === selected_type.id) {
-      selected_type.style.display = "inline";
-      selected_type1.style.display = "inline";
-    } else {
-      var unselected_type = document.getElementById(lll_type);
-      var unselected_type1 = document.getElementById(real_leather_types1[index]);
-
-      unselected_type.style.display = "none";
-      unselected_type1.style.display = "none";
-    }
-  });
-}
 
 // Toggle between showing and hiding the sidebar, and add overlay effect
 function w3_open() {
