@@ -24,6 +24,18 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   bottom: 0;
   height: inherit;
 }
+
+#searchInput {
+  background-image: url('search-icon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 40%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid gray;
+  margin-bottom: 12px;
+  font-family: 'Times', serif;
+}
 </style>
 <body>
 
@@ -83,7 +95,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
           at any given time, with the exception of the last few rarest ones this list only sometimes surfacing.
       </p>
 
-      <table class="w3-table w3-bordered" style="font-family: 'Times', serif">
+      <input type="text" id="searchInput" onkeyup="searchTitles()" placeholder="Search for titles.." title="Type in a title" maxlength="20">
+
+      <table class="w3-table w3-bordered" style="font-family: 'Times', serif" id="redcroft-titles">
         <tr style="font-family: 'IM Fell English', serif">
         <th>Title</th>
         <th>Author</th>
@@ -123,38 +137,32 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         <td>Lancelot and Elaine</td>
         <td>Alfred Lord Tennyson</td>
         <td>Common</td>
-
         </tr>
+
         <tr>
         <td>A Tillyloss Scandal</td>
         <td>James Barrie</td>
         <td>Common</td>
-
         </tr>
+
         <tr>
         <td>Christ in Flanders</td>
         <td>Honore De Balzac</td>
         <td>Common</td>
-
         </tr>
+
         <tr>
         <td>Pelleas and Melisande</td>
         <td>Maurice Maeterlinck</td>
         <td>Common</td>
-
         </tr>
+
         <tr>
         <td>Short Stories</td>
         <td>Guy De Maupassant</td>
         <td>Common</td>
-
         </tr>
-        <tr>
-        <td>Bab Ballads</td>
-        <td>W.S. Gilbert</td>
-        <td>Common</td>
 
-        </tr>
         <tr>
         <td>On Going to Church</td>
         <td>George Bernard Shaw</td>
@@ -648,7 +656,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
       </table>
 
       <p style="font-family: 'Times', serif; text-align: right;">
-        <i>Last updated May 2023</i>
+        <i>Last updated May 2022</i>
       </p>
     </div>
 
@@ -698,6 +706,25 @@ function w3_open() {
 function w3_close() {
   mySidebar.style.display = "none";
   overlayBg.style.display = "none";
+}
+
+function searchTitles() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("searchInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("redcroft-titles");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
 }
 </script>
 
